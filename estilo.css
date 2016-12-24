@@ -1,0 +1,138 @@
+@import url(http://fonts.googleapis.com/css?family=The+Girl+Next+Door);
+
+body{
+  background: black;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+*::after, *::before{
+  position: absolute;
+  content: "";
+}
+
+#circulo{
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  background: #fcdd32;
+}
+
+p{
+  top: 85%;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  background: red;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 1.8em;
+  color: white;
+}
+
+#cabeca{
+  left: 28%;
+  top: 30%;
+  width: 90px;
+  height: 80px;
+  background: #faca88;
+  border-radius: 100%;
+}
+
+#cabeca::after, #cabeca::before{
+  width: 8px;
+  height: 20px;
+  top: 35%;
+  background: #eb9896;
+}
+
+#cabeca::after{
+  left: -7%;
+  border-radius: 10px 0 0 10px;
+}
+
+#cabeca::before{
+  left: 98%;
+  border-radius: 0 10px 10px 0;
+}
+
+#olho{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 35%;
+  left: 20%;
+  background: black;
+  z-index: 10;
+  box-shadow: 44px 0px black;;
+}
+
+#nariz{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  top: 50%;
+  left: 40%;
+  background: #eb9896;
+  z-index: 10;
+}
+
+#boca{
+  width: 30px;
+  height: 15px;
+  top: 76%;
+  left: 34%;
+  border-radius: 0 0 10px 10px;
+  background: black;
+  z-index: 10;
+}
+
+#chapeu{
+  left: 35%;
+  top: 10%;
+  width: 60px;
+  height: 40px;
+  background: red;
+  -webkit-border-top-right-radius: 100px 60px;
+}
+
+#chapeu::after{
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100%;
+  left: -12%;
+  top: -12%;
+}
+
+#gorro{
+  top: 23%;
+  left: 25%;
+  width: 100px;
+  height: 35px;
+  background: white;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+#barba{
+  width: 120px;
+  height: 70px;
+  background: white;
+  top: 55%;
+  left: 20%;
+  border-radius: 0 50px 50px 0;
+  border-bottom-left-radius: 100px 100px;
+  z-index: 2;
+}
+
+.absoluto{
+  position: absolute;
+}
